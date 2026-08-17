@@ -83,7 +83,7 @@ export function StudyChat({ subject }: { subject?: string }) {
           <div>
             <p className="text-sm font-semibold">StudyMate Assistant</p>
             <p className="text-xs text-muted-foreground">
-              Demo responses — ready for a live AI model
+              {subject ? `Study focus: ${subject}` : "Demo responses — ready for a live AI model"}
             </p>
           </div>
         </div>
