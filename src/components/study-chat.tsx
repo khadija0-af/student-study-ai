@@ -29,7 +29,7 @@ function draftAnswer(question: string): string {
   return "Good question. Break it into what you already know, what the question is actually asking, and the one step connecting them. Share more detail and I will guide you through it step by step.";
 }
 
-export function StudyChat() {
+export function StudyChat({ subject }: { subject?: string }) {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 0,
@@ -44,6 +44,18 @@ export function StudyChat() {
   useEffect(() => {
     listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: "smooth" });
   }, [messages, thinking]);
+
+  useEffect(() => {
+    if (!subject) return;
+    setMessages((m) => [
+      ...m,
+      {
+        id: Date.now(),
+        role: "assistant",
+        text: `Your selected study focus is ${subject}. You can ask me anything about this subject.`,
+      },
+    ]);
+  }, [subject]);
 
   function send(text: string) {
     const trimmed = text.trim();
@@ -71,7 +83,7 @@ export function StudyChat() {
           <div>
             <p className="text-sm font-semibold">StudyMate Assistant</p>
             <p className="text-xs text-muted-foreground">
-              Demo responses — ready for a live AI model
+              {subject ? `Study focus: ${subject}` : "Demo responses — ready for a live AI model"}
             </p>
           </div>
         </div>

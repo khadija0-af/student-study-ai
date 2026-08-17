@@ -106,13 +106,13 @@ function StudyHelpPage() {
                   document.getElementById("chat")?.scrollIntoView({ behavior: "smooth" })
                 }
               >
-                Jump to assistant
+                Ask StudyMate
               </Button>
             </div>
 
             <section id="chat" className="scroll-mt-28">
               <h2 className="mb-4 text-lg font-semibold">Ask StudyMate</h2>
-              <StudyChat />
+              <StudyChat subject={active} />
             </section>
           </div>
         </div>
