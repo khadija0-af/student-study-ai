@@ -112,7 +112,7 @@ function StudyHelpPage() {
 
             <section id="chat" className="scroll-mt-28">
               <h2 className="mb-4 text-lg font-semibold">Ask StudyMate</h2>
-              <StudyChat />
+              <StudyChat subject={active} />
             </section>
           </div>
         </div>
