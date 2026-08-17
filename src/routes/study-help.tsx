@@ -106,7 +106,7 @@ function StudyHelpPage() {
                   document.getElementById("chat")?.scrollIntoView({ behavior: "smooth" })
                 }
               >
-                Jump to assistant
+                Ask StudyMate
               </Button>
             </div>
 
