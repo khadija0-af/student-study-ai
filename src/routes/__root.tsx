@@ -81,18 +81,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "StudyMate AI — Smart Study Assistant" },
+      { title: "StudyMate AI — Smart Study Assistant for Students" },
       {
         name: "description",
-        content: "Your smart companion for learning, revision and study support.",
+        content: "StudyMate AI is your smart companion for learning, revision and study support: AI study help, organised notes and resources, and answers to common questions.",
       },
-      { property: "og:title", content: "StudyMate AI — Smart Study Assistant" },
+      { property: "og:title", content: "StudyMate AI — Smart Study Assistant for Students" },
       {
         property: "og:description",
-        content: "Your smart companion for learning, revision and study support.",
+        content: "StudyMate AI is your smart companion for learning, revision and study support: AI study help, organised notes and resources, and answers to common questions.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "StudyMate AI — Smart Study Assistant for Students" },
+      { name: "twitter:description", content: "StudyMate AI is your smart companion for learning, revision and study support: AI study help, organised notes and resources, and answers to common questions." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/dde2badd4833a1261e39b6aaa17b9a4d/id-preview-7a386f0f--9eec14c0-66a4-451c-b11a-6930a15ca6f4.lovable.app-1786973444731.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/dde2badd4833a1261e39b6aaa17b9a4d/id-preview-7a386f0f--9eec14c0-66a4-451c-b11a-6930a15ca6f4.lovable.app-1786973444731.png" },
     ],
     links: [
       {

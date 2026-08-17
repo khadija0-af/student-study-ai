@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "AI-powered study help, notes and revision planning in one clean, student-friendly workspace.",
+          "StudyMate AI is your smart companion for learning, revision and study support: AI study help, organised notes and resources, and answers to common questions.",
       },
     ],
   }),
