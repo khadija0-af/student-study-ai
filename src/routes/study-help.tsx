@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { BookMarked, Calculator, FlaskConical, Globe2, Code2, Landmark } from "lucide-react";
-import { StudyChat } from "@/components/study-chat";
+import { ZapierChatbot } from "@/components/zapier-chatbot";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 
@@ -112,7 +112,7 @@ function StudyHelpPage() {
 
             <section id="chat" className="scroll-mt-28">
               <h2 className="mb-4 text-lg font-semibold">Ask StudyMate</h2>
-              <StudyChat subject={active} />
+              <ZapierChatbot subject={active} />
             </section>
           </div>
         </div>
